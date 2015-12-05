@@ -1,0 +1,209 @@
+Errata sheet for Star Raiders source project in it's currently offered version
+
+pg 002 PROGST for PRGOST on line 3
+
+pg 002 missing semicolon on line 5
+
+pg 003 REDFLG for REDFKG on line 22
+
+pg 007 POKEY for POKET on line 32
+
+pg 010 SCBCD for SBCD on line 13
+
+pg 011 misplaced comma on line 22
+
+pg 012 missing data $18 between 2nd and 3rd slots on line 1
+
+pg 012 by rom comparison line 37 is:
+A0E0 80 98 80	CZY2		.BYTE	$80,$98,$80,$B6,$80,$8C,$80,$FF
+A0E3 B6 80 8C
+A0E6 80 FF 
+
+pg 013 missing comma on line 34
+
+pg 020 STA for ATS on line 4
+
+pg 020 LDY for LDX on line 9
+
+pg 021 ZYGRAF for ZYGRAP on line 27
+
+pg 022 MAIN1 for MAINI on line 16
+
+pg 022 BEQ for BEG on line 21
+
+pg 023 missing line at line 54:
+A3FC C6 6B              DEC     TEMP1
+
+pg 025 S1VPOS for STVPOS on line 24
+
+pg 025 YPOSH for YPOSL on line 37
+
+pg 025 YPOSH for YPOSK on line 43
+
+pg 025 STHPOS for SHTPOS on line 48
+
+pg 026 DISFLG for DISFL0 on line 2
+
+pg 026 S1VPOS for STVPOS on line 19
+
+pg 026 OBJCL3 label position error on line 54
+
+pg 028 KEYSERV for KEYSRV on line 59
+
+pg 029 PORTA for PROTA on line 2
+
+pg 029 EOR for EOX on line 41
+
+pg 031 PANDIS for PASDIN on line 28
+
+pg 032 HITME for HTIME on line 12
+
+pg 032 VBLNK4 for VBNLK4 on line 19
+
+pg 032 LDY #$00 for second BPL	VBLNK5 on line 45
+
+pg 032 VBLNK5 label position error on line 47
+
+pg 033 DISNM1 for DISNMI on line 1 - by rom verify
+
+pg 036 UPINST lable position error on line 9
+
+pg 036 UPINS2 for UPINST2 on line 16
+
+pg 036 UPINS9 for UPINST9 on line 24
+
+pg 036 two missing lines at line 49:
+A800 A9 0B              LDA     #$0B
+A802 10 06              BPL     UPINS5
+
+pg 036 HTARGT for HTRGT on line 56
+
+pg 037 LDY for LDA on line 1 - by rom verify
+
+pg 038 SPEED for SEEPD on line 26
+
+pg 039 HYPQAD for HYPGAD on line 45
+
+pg 039 QUADRT for GUADRT on line 46
+
+pg 041 #99 for #$99 on line 45
+
+pg 042 DIVID4 for DIDIV4 on line 53
+
+pg 046 THIN10 for THINK10 on line 60
+
+pg 048 STA for LDA on line 44
+
+pg 048 YSIGN for XSIGN on both lines 48 and 49
+
+pg 048 YPOSH for XPOSH on both lines 50 and 51
+
+pg 050 BSEQTM for BSEGTM on line 19
+
+pg 050 BSEQTM for BSEGTM on line 24
+
+pg 051 STINT for STINIT on line 7
+
+pg 051 BSEQTM for BSEQTIM on line 25
+
+pg 054 DAMCT3 for CAMCT3 on line 44
+
+pg 056 #$ for $# on line 5
+
+pg 056 DKILL for DKISLL on line 37
+
+pg 057 KEYSR3 for KESR3 on line 10
+
+pg 060 missing line at line 11:
+B13A 30 25              BMI     CRATE3
+
+pg 062 LDMES14 for LDMS14 on line 45
+
+pg 063 RANKTB for RANKTAB on line 31
+
+pg 064 #$FE for #FE on line 5
+
+pg 064 NDURTM for NDURTIM on line 30
+
+pg 065 AUD10 for AUDIO on line 8
+
+pg 065 TXA for TAX on line 13
+
+pg 065 PHOREP for PHREP on line 46
+
+pg 065 AUDI12 for AUD12 on line 47
+
+pg 068 STINT for STINIT on line 16
+
+pg 068 TEMP1 for TEMP 1 on line 32
+
+pg 070 #$02 for #402 on line 48
+
+pg 071 one too many tabs on line 28
+
+pg 073 CHTRAM for SHTRAM on line 9
+
+pg 074 JMPPTS for JUMPPTS on line 42
+
+pg 075 comment and ultimately delete lines 20 thru 22
+
+ps 075 XPOSH,Y for XSIGN,Y on line 23
+
+pg 075 XPOSH for XPSH on line 35
+
+pg 079 DRHO for DHRO on line 5
+
+pg 079 LDX for LDA on line 30 
+
+pg 079 PAND10 for RAND10 on line 58
+
+pg 084 misnamed and missing ZYGRF4 data on line 21:
+B9D2            ZYGRF4
+B9D2 24 3C 3C              .BYTE $24,$3C,$3C,$24
+B9D5 24
+
+pg 087 misnamed and missing KLGRF3 data on line 20:
+BA52            KLGRF3
+BA52 10 38 7C         .BYTE   $10,$38,$7C,$10,$7C,$38,$10
+BA55 10 7C 38
+BA58 10
+
+pg 089 $ED for $EF on line 13
+
+pg 091 $FE for $FF on line 13
+
+pg 092 $0F for $04 on line 13
+
+pg 092 missing data $E1 between $E4 and $F4 on line 35
+
+pg 095 SENEDS data missing on line 12:
+BCO8            SENEDS          ; ENGINES DESTROYED
+BCO8 23 8C 78              .BYTE 35,$8C,$78
+
+pg 097 COMPLETE shouldn't have 'C' on line 15
+
+pg 098 needs one more standard space in "   STAR RAIDERS" on line 8
+
+pg 098 (R) ANK IS: for AND IS: on line 24 by rom verify
+
+pg 098 missing comma on line 49
+
+pg 107 $AF for $FA on line 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
